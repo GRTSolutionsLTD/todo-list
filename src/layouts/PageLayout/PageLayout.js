@@ -9,6 +9,9 @@ export const PageLayout = ({ children }) => (
     <IndexLink to='/' activeClassName='page-layout__nav-item--active'>Home</IndexLink>
     {' · '}
     <Link to='/counter' activeClassName='page-layout__nav-item--active'>Counter</Link>
+    {' · '}
+    {/* <Route path='/Todo' component={Todo}/> */}
+    <Link to='/todo' activeClassName='page-layout__nav-item--active'>todo</Link> 
     <div className='page-layout__viewport'>
       {children}
     </div>
@@ -17,5 +20,6 @@ export const PageLayout = ({ children }) => (
 PageLayout.propTypes = {
   children: PropTypes.node,
 }
+
 
 export default PageLayout

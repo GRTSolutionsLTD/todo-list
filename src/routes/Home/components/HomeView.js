@@ -8,5 +8,4 @@ export const HomeView = () => (
     <img alt='This is a duck, because Redux!' className='duck' src={DuckImage} />
   </div>
 )
-
 export default HomeView
