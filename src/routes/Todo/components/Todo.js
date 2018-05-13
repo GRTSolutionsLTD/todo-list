@@ -155,5 +155,4 @@ Todo.propTypes = {
   Update: PropTypes.func.isRequired,
   Show: PropTypes.func.isRequired,
 }
-
 export default Todo
