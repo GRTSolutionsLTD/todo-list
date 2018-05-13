@@ -12,9 +12,7 @@ class Button extends React.Component {
     //   }
     onClickDelete(e)
     {
-       
         alert(e._dispatchInstances._currentElement.key)
-      
     }
     //   onClick={this.onClickDelete}
     render() {
