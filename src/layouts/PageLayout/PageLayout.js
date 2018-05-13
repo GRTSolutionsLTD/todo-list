@@ -15,6 +15,7 @@ export const PageLayout = ({ children }) => (
     <div className='page-layout__viewport'>
       {children}
     </div>
+ 
   </div>
 )
 PageLayout.propTypes = {

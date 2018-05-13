@@ -1,5 +1,13 @@
+$colorh1:red;
 .duck {
   display: block;
   width: 120px;
   margin: 1.5rem auto;
+  h1{color:colorh1}
+}
+.home{
+  h4{
+    color:$colorh1;
+  }
+  
 }
