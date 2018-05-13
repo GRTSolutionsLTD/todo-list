@@ -23,9 +23,9 @@ class Button extends React.Component {
                     <table className="table table-hover">
                         <tr><th>משימה</th><th>בוצע</th><th>תאריך התחלה</th><th>תאריך סיום</th><th>הערה</th></tr>
                         {
-                            this.props.SendData.map((movie,i)=> (
-                             <tr ><td>{movie.task}</td> <td><input type="checkbox"  />{movie.Done} </td><td> {movie.dateF}</td>  <td>  {movie.dateL} </td> <td> {movie.note} </td><td><a  href="#" >עדכן</a> {' |'}  <a key={i} href="#" onClick={this.onClickDelete.bind(movie)}>מחק</a></td></tr>
-                            ))
+                            // this.props.SendData.map((movie,i)=> (
+                            //  <tr ><td>{movie.task}</td> <td><input type="checkbox"  />{movie.Done} </td><td> {movie.dateF}</td>  <td>  {movie.dateL} </td> <td> {movie.note} </td><td><a  href="#" >עדכן</a> {' |'}  <a key={i} href="#" onClick={this.onClickDelete.bind(movie)}>מחק</a></td></tr>
+                            // ))
                         }
                     </table>
                 </div>
