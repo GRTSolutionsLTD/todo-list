@@ -6,7 +6,6 @@ class Button extends React.Component {
     constructor(props) {
         super(props)
       }
-    
     //   onClickDelete=(e)=>{
     //     alert(e.task)
     //   }

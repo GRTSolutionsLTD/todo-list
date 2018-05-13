@@ -5,7 +5,7 @@ import Todo from '../components/Todo'
 
 const mapDispatchToProps = {
   Delete ,
-  Add,
+  Add: () => Add(null),
   Update,
   Show
 }

@@ -6,28 +6,35 @@ export const UPDATE = 'UPDATE'
 export const SHOW = 'SHOW'
 
 // Actions
-export const Add = () => {
+export function Add (value=null) {
     alert("Add")
-    return (dispatch, getState) => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                dispatch({
-                    type: ADD,
-                    payload:
-                        {
-                            "task": "Racheli",
-                            "done": false,
-                            "datef": "Wed Apr 27 1988 07:25:08 GMT+0300 (Eastern Europe Daylight Time)",
-                            "datel": "Fri Jun 06 2014 11:43:28 GMT+0300 (Eastern Europe Daylight Time)",
-                            "notes": "Cute"
-                        }
-
-                })
-                resolve()
-            }, 200)
-        })
+    return {
+      type    : ADD,
+      payload : value
     }
-}
+  }
+// export const Add = () => {
+//     alert("Add")
+//     return (dispatch, getState) => {
+//         return new Promise((resolve) => {
+//             setTimeout(() => {
+//                 dispatch({
+//                     type: ADD,
+//                     payload:
+//                         {
+//                             "task": "Racheli",
+//                             "done": false,
+//                             "datef": "Wed Apr 27 1988 07:25:08 GMT+0300 (Eastern Europe Daylight Time)",
+//                             "datel": "Fri Jun 06 2014 11:43:28 GMT+0300 (Eastern Europe Daylight Time)",
+//                             "notes": "Cute"
+//                         }
+
+//                 })
+//                 resolve()
+//             }, 200)
+//         })
+//     }
+// }
 
 export const Delete = () => {
     alert("Delete")
