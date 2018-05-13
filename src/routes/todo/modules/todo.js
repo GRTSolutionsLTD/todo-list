@@ -6,7 +6,7 @@ export const UPDATE = 'UPDATE'
 export const SHOW = 'SHOW'
 
 // Actions
-export function Add (value=null) {
+export function Add (value) {
     alert("Add")
     return {
       type    : ADD,
