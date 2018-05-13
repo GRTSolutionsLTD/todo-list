@@ -1,11 +1,13 @@
 import { connect } from 'react-redux'
-import { Delete, add } from '../modules/todo'
+import { Delete, Add,Update,Show } from '../modules/todo'
 import Todo from '../components/Todo'
 
 
 const mapDispatchToProps = {
   Delete ,
-  add
+  Add,
+  Update,
+  Show
 }
 
 const mapStateToProps = (state) => ({
