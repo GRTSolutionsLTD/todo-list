@@ -99,61 +99,63 @@ import Button from '../components/Button'
 //     )
 //   }
 export const Todo = ({ todo, Delete, Add, Update, Show }) => (
-  <div style = {{ height: '100%' }}>
-    {/* <Router history={browserHistory} children={this.props.routes} /> */ }
-    < div style = {{ margin: '0 auto' }} >
-      <h2>List to do</h2>
-      <table className="table table-hover">
-        <tr><th>משימה</th><th>בוצע</th><th>תאריך התחלה</th><th>תאריך סיום</th><th>הערה</th></tr>
-        {
-          todo.map(function (movie) {
-            return <tr><td>{movie.task}</td> <td><input type="checkbox" />{movie.Done} </td><td> {movie.datef}</td>  <td>  {movie.datel} </td> <td> {movie.notes} </td><td><input type="button" value="מחק" onClick={Delete} />
-              <input type="button" value="עדכן" onClick={Update} /> </td></tr>;
-          })
-        }
-      </table>
-      <div style={{ margin: '0 auto' }}>
-        <h2>list todo</h2>
-        <table className="table">
-          <tr>
-            <th>task</th>
-            <th>done</th>
-            <th>date-start</th>
-            <th>date-finish</th>
-            <th>notes</th>
-          </tr>
-          {todo.map((movie, i) =>
-            (movie.done ? <tr /*key={i} onClick={this.onClick1.bind(this)}*/ ><td>{movie.task}</td><input type="checkbox" /*onChange={this.OnChange.bind(this)}*/ checked={movie.done} />
-              <td>{movie.datel}</td><td>{movie.datef}</td><td>{movie.notes}</td></tr> : ""))}
-        </table>
-        <table className="table table-striped" >
-          <tr>
-            <th>task</th>
-            <th>done</th>
-            <th>date-start</th>
-            <th>date-finish</th>
-            <th>notes</th>
-          </tr>
-          {
-            todo.map((movie, i) =>
-            (!movie.done ? <tr><td>{movie.task}</td><input type="checkbox" checked={movie.done} /*onChange={this.OnChange.bind(this)}*/ />
-              <td>{movie.datel}</td><td>{movie.datef}</td><td>{movie.notes}</td></tr> : ""))}
-        </table>
-        <Pop myNumber={todo} index={1} />
-        {/*this.state.showReply && <Pop /*myNumber={this.state.data1} index={this.state.currentRow} save={this.save} />*/}
-      </div>
+    <div style={{ height: '100%' }}>
+        {/* <Router history={browserHistory} children={this.props.routes} /> */}
+        < div style={{ margin: '0 auto' }} >
+            <h2>List to do</h2>
+            <table className="table table-hover">
+                <tr><th>משימה</th><th>בוצע</th><th>תאריך התחלה</th><th>תאריך סיום</th><th>הערה</th></tr>
+                {
+                    todo.map(function(movie) {
+                        return <tr><td>{movie.task}</td> <td><input type="checkbox" />{movie.Done} </td><td> {movie.datef}</td>  <td>  {movie.datel} </td> <td> {movie.notes} </td><td><input type="button" value="מחק" onClick={Delete} />
+                            <input type="button" value="עדכן" onClick={Update} /> </td></tr>;
+                    })
+                }
+            </table>
+            <div style={{ margin: '0 auto' }}>
+                <h2>list todo</h2>
+                <table className="table">
+                    <tr>
+                        <th>task</th>
+                        <th>done</th>
+                        <th>date-start</th>
+                        <th>date-finish</th>
+                        <th>notes</th>
+                    </tr>
+                    {todo.map((movie, i) =>
+                        (movie.done ? <tr /*key={i} onClick={this.onClick1.bind(this)}*/ ><td>{movie.task}</td><input type="checkbox" /*onChange={this.OnChange.bind(this)}*/ checked={movie.done} />
+                            <td>{movie.datel}</td><td>{movie.datef}</td><td>{movie.notes}</td></tr> : ""))}
+                </table>
+                <table className="table table-striped" >
+                    <tr>
+                        <th>task</th>
+                        <th>done</th>
+                        <th>date-start</th>
+                        <th>date-finish</th>
+                        <th>notes</th>
+                    </tr>
+                    {
+                        todo.map((movie, i) =>
+                            (!movie.done ? <tr><td>{movie.task}</td><input type="checkbox" checked={movie.done} /*onChange={this.OnChange.bind(this)}*/ />
+                                <td>{movie.datel}</td><td>{movie.datef}</td><td>{movie.notes}</td></tr> : ""))}
+                </table>
+                {/* <Pop myNumber={todo} index={1} /> */}
+                {/*this.state.showReply && <Pop /*myNumber={this.state.data1} index={this.state.currentRow} save={this.save} />*/}
+            </div>
+        </div >
+        <input type="button" value="הוסף" 
+        onClick={() => Add("id")} 
+        />
     </div >
-  <input type="button" value="הוסף" onClick={Add} />
-  </div >
 
 )
 // }
 Todo.propTypes = {
-  todo: PropTypes.object.isRequired,
-  Delete: PropTypes.func.isRequired,
-  Add: PropTypes.func.isRequired,
-  Update: PropTypes.func.isRequired,
-  Show: PropTypes.func.isRequired,
+    todo: PropTypes.object.isRequired,
+    Delete: PropTypes.func.isRequired,
+    Add: PropTypes.func.isRequired,
+    Update: PropTypes.func.isRequired,
+    Show: PropTypes.func.isRequired,
 }
 
 export default Todo
