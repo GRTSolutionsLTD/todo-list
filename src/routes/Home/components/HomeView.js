@@ -9,6 +9,8 @@ export const HomeView = () => (
     <p>hello</p>
     <img alt='This is a duck, because Redux!!!' className='duck' src={DuckImage} />
     <div>dzstg5ujsrtu</div>
+    <img alt='This is a duck, because Redux!!ddddddd!' className='duck' src={DuckImage} />
+    <h2>tyttyyytyytytytty</h2>
   </div>
 )
 export default HomeView
