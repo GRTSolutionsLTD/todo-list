@@ -6,7 +6,7 @@ export const UPDATE = 'UPDATE'
 export const SHOW = 'SHOW'
 
 // Actions
-export const Add = () => {
+export function Add (value) {
     alert("Add")
     return (dispatch, getState) => {
         return new Promise((resolve) => {
