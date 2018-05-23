@@ -25,22 +25,6 @@ class Pop extends React.Component {
     render() {
         return (
            <div>
-
-          {/* <AvForm>   
-          task:   
-        <input type="text"  value={this.props.myNumber[this.props.index].task} />
-        <br/>
-        datef:
-        <input type="text"  value={this.props.myNumber[this.props.index].task} />
-        <br/>
-        datel:
-        <input type="text"  value={this.props.myNumber[this.props.index].task} />
-        <br/>
-        notes:
-        <input type="text"  value={this.props.myNumber[this.props.index].task} />
-        <br/>
-        <Button color="primary">שמור</Button>
-        </AvForm> */}
        <form className="form-horizontal" display="none">
             <fieldset>
               <legend>details:</legend>
